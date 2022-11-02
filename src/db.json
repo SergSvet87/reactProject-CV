@@ -44,31 +44,31 @@
           {
             "socialId": 0,
             "socialLink": "https://github.com/SergSvet87?tab=repositories",
-            "socialImage": "/icons/socials/github.svg",
+            "socialImage": "/socials/github.svg",
             "socialName": "github"
           },
           {
             "socialId": 1,
             "socialName": "linkedin",
-            "socialImage": "/icons/socials/linkedin.svg",
+            "socialImage": "/socials/linkedin.svg",
             "socialLink": "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BhcBiHBFlT5yVayJn2EHCdQ%3D%3D"
           },
           {
             "socialId": 2,
             "socialName": "telegram",
-            "socialImage": "/icons/socials/telegram.svg",
+            "socialImage": "/socials/telegram.svg",
             "socialLink": "https://t.me/Serg_svet"
           },
           {
             "socialId": 3,
             "socialName": "skype",
-            "socialImage": "/icons/socials/Skype.svg",
+            "socialImage": "/socials/Skype.svg",
             "socialLink": "Skype:https://join.skype.com/invite/CBnR8fF6vKfj"
           },
           {
             "socialId": 4,
             "socialName": "viber",
-            "socialImage": "/icons/socials/viber.svg",
+            "socialImage": "/socials/viber.svg",
             "socialLink": "viber://chat?number=%2B380976157541"
           }
         ]
