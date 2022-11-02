@@ -1,0 +1,16 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #f5f5f5;
+}
+.header__logo {
+  display: block;
+  padding-top: 15px;
+}
+
+.mobile-catalog {
+  display: none;
+}
+/* ./header */

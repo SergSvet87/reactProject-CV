@@ -1,0 +1,146 @@
+.Footer {
+  background: #635854;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.footer__animation {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.footer__copyright {
+  max-width: 470px;
+
+  color: #e5e5e5;
+  text-align: center;
+  line-height: 1.6;
+}
+.footer__copyright i {
+  padding: 0 5px;
+  font-size: inherit;
+}
+
+.footer__address {
+  display: inline-block;
+  padding-left: 7px;
+}
+.footer__address a {
+  font-weight: 700;
+  color: #3596f5;
+}
+.footer__address a:hover {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.social-item {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 20px #211d1d, inset 0 0 1px #000;
+  position: relative;
+}
+
+.social-item a {
+  transition: 0.3s;
+}
+
+.social-item::before {
+  animation-delay: -4s !important;
+}
+
+.social-item::before,
+.social-item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 0 2px #3596f5;
+  margin: -7%;
+  animation: round 10s linear infinite;
+}
+
+.animation__circle:hover .animation__text {
+  animation-play-state: paused;
+  fill: #fff;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.animation__circle:hover .animation__arrow {
+  transform: scale(0.5);
+}
+
+.animation__arrow {
+  transform-box: fill-box;
+  transform-origin: center center;
+}
+
+.animation__text {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 3px;
+  animation: motion normal infinite 20s linear;
+  transform-origin: 50% 50%;
+}
+
+@keyframes round {
+  0%,
+  100% {
+    clip: rect(0px, 40px, 4px, 0px);
+  }
+  25% {
+    clip: rect(0px, 4px, 40px, 0px);
+  }
+
+  50% {
+    clip: rect(40px, 40px, 40px, 0px);
+  }
+
+  75% {
+    clip: rect(0px, 40px, 40px, 40px);
+  }
+}
+
+@keyframes motion {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media only screen and (max-width: 575.99px) {
+  .footer__social {
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1199.99px) {
+  .footer__copyright {
+    padding-top: 20px;
+    margin: auto;
+  }
+}

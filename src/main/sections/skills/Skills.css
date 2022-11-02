@@ -1,0 +1,41 @@
+section.Skills {
+  padding: 0px 0 50px;
+}
+.skills-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.02em;
+  color: #5bbad5;
+  margin-bottom: 20px;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.slide-swiper__card-text-wrapper .tags {
+  justify-content: center;
+}
+
+.tag {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 150%;
+  color: #211b12;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #dd9c3c;
+  border-radius: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 4px 8px;
+}

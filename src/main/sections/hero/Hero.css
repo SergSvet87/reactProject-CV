@@ -1,0 +1,86 @@
+section.Hero {
+  padding: 100px 0;
+}
+
+.Hero {
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-photo {
+  width: 312px;
+  height: 357px;
+  border-radius: 60px;
+  padding-left: 20px;
+}
+
+.header .header-photo {
+  vertical-align: bottom;
+  transition: all 0.3s;
+}
+
+.header-photo:hover {
+  transform: scale(1.2);
+}
+
+.header-text {
+  margin-left: 70px;
+  text-align: left;
+}
+.header-strong {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  color: #5bbad5;
+}
+.hero__heading {
+  display: inline-block;
+  transform: rotate(0deg);
+  animation: wave 3s ease-in-out 0.5s infinite both;
+}
+.header-heading {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding-right: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 135%;
+  letter-spacing: -0.02em;
+  color: inherit;
+}
+
+.header-primary {
+  font-weight: 700;
+  color: #3f4475;
+  padding: 0 10px;
+}
+
+.header-heading__name {
+  font-size: 32px;
+  color: #3f4475;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: perspective(100px) rotate(15deg);
+    transform-origin: bottom;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Hero {
+    flex-direction: column;
+  }
+
+  .header-photo {
+    margin-bottom: 60px;
+  }
+}
